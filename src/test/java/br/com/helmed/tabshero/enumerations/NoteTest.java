@@ -6,6 +6,7 @@ import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNull;
 
 /**
+ * Unit test of {@link Note}
  * User: helmed
  * Date: 7/8/13
  * Time: 9:31 PM
