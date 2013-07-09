@@ -10,7 +10,7 @@ import java.util.List;
  */
 public enum Scale {
     //Dó - Dó# - Ré - Ré# - Mi - Fá - Fá# - Sol - Sol# - Lá - Lá# - Si
-    Chromatic(Note.DO, Note.DO_SHARP, Note.RE, Note.RE_SHARP, Note.MI, Note.FA, Note.FA_SHARP, Note.SOL);
+    Chromatic(Note.DO, Note.DO_SHARP, Note.RE, Note.RE_SHARP, Note.MI, Note.FA, Note.FA_SHARP, Note.SOL, Note.SOL_SHARP, Note.LA, Note.LA_SHARP, Note.SI);
 
     private List<Note> allNotes;
 

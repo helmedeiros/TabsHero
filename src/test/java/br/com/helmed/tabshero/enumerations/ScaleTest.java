@@ -21,6 +21,10 @@ public class ScaleTest {
     private static final int SIXTH = 6;
     private static final int SEVENTH = 7;
     private static final int EIGHTH = 8;
+    private static final int NINTH = 9;
+    private static final int TENTH = 10;
+    private static final int ELEVENTH = 11;
+    private static final int TWELFTH = 12;
 
     @Test public void shouldReturnNullWhenTheNotePositionsDoesntExistInTheScale() throws Exception {
         assertNull(Scale.Chromatic.getNote(16));
@@ -58,5 +62,19 @@ public class ScaleTest {
         assertEquals(Note.SOL, Scale.Chromatic.getNote(EIGHTH));
     }
 
+    @Test public void shouldReturnTheSOLSHARPAsTheNinthNoteFromChromaticScale() throws Exception {
+        assertEquals(Note.SOL_SHARP, Scale.Chromatic.getNote(NINTH));
+    }
 
+    @Test public void shouldReturnTheLAAsTheTenthNoteFromChromaticScale() throws Exception {
+        assertEquals(Note.LA, Scale.Chromatic.getNote(TENTH));
+    }
+
+    @Test public void shouldReturnTheLASHARPAsTheEleventhNoteFromChromaticScale() throws Exception {
+        assertEquals(Note.LA_SHARP, Scale.Chromatic.getNote(ELEVENTH));
+    }
+
+    @Test public void shouldReturnTheSISHARPAsTheTwelfthNoteFromChromaticScale() throws Exception {
+        assertEquals(Note.SI, Scale.Chromatic.getNote(TWELFTH));
+    }
 }
