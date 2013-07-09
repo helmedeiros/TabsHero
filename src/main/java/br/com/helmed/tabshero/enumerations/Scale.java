@@ -10,7 +10,7 @@ import java.util.List;
  */
 public enum Scale {
     //Dó - Dó# - Ré - Ré# - Mi - Fá - Fá# - Sol - Sol# - Lá - Lá# - Si
-    Chromatic(Note.DO);
+    Chromatic(Note.DO, Note.DO_SHARP);
 
     private List<Note> allNotes;
 
@@ -18,7 +18,16 @@ public enum Scale {
         this.allNotes = Arrays.asList(notes);
     }
 
-    public List<Note> getAllNotes() {
+    private List<Note> getAllNotes() {
         return this.allNotes;
+    }
+
+    /**
+     * find and return the {@link Note} existing in the gave position.
+     * @param position - The position from the wanted {@link Note}.
+     * @return the {@link Note} when the position is valid.
+     */
+    public Note getNote(final int position) {
+        return this.getAllNotes().get(position-1);
     }
 }

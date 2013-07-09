@@ -11,8 +11,11 @@ import static org.junit.Assert.assertEquals;
  * Time: 10:17 PM
  */
 public class ScaleTest {
-    @Test
-    public void shouldReturnTheDOAsTheFirstNoteFromChromaticScale() throws Exception {
-        assertEquals(Note.DO, Scale.Chromatic.getAllNotes().get(0));
+    @Test public void shouldReturnTheDOAsTheFirstNoteFromChromaticScale() throws Exception {
+        assertEquals(Note.DO, Scale.Chromatic.getNote(1));
+    }
+
+    @Test public void shouldReturnTheDOSHARPAsTheSecondNoteFromChromaticScale() throws Exception {
+        assertEquals(Note.DO_SHARP, Scale.Chromatic.getNote(2));
     }
 }
