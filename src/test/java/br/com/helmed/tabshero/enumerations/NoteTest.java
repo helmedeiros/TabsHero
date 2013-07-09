@@ -43,5 +43,14 @@ public class NoteTest {
         assertEquals(Note.FA_SHARP, Note.byItsLetter("F#"));
     }
 
+    @Test public void shouldReturnTheSOLNoteWhenGIsInformed() throws Exception {
+        assertEquals(Note.SOL, Note.byItsLetter("G"));
+    }
+
+    @Test public void shouldReturnTheSOLSHARPNoteWhenGSHARPIsInformed() throws Exception {
+        assertEquals(Note.SOL_SHARP, Note.byItsLetter("G#"));
+    }
+
+
 
 }
