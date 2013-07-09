@@ -6,7 +6,7 @@ package br.com.helmed.tabshero.enumerations;
  * Time: 9:11 PM
  */
 public enum Note {
-    DO("C");
+    DO("C"), DO_SHARP("C#");
 
     private final String letter;
 

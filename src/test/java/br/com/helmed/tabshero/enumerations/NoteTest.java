@@ -18,4 +18,8 @@ public class NoteTest {
     @Test public void shouldReturnTheDONoteWhenCIsInformed() throws Exception {
         assertEquals(Note.DO, Note.byItsLetter("C"));
     }
+
+    @Test public void shouldReturnTheDOSHARPNoteWhenCSHARPIsInformed() throws Exception {
+        assertEquals(Note.DO_SHARP, Note.byItsLetter("C#"));
+    }
 }
