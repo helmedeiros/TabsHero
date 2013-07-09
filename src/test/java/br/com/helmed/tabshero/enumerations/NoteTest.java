@@ -22,4 +22,12 @@ public class NoteTest {
     @Test public void shouldReturnTheDOSHARPNoteWhenCSHARPIsInformed() throws Exception {
         assertEquals(Note.DO_SHARP, Note.byItsLetter("C#"));
     }
+
+    @Test public void shouldReturnTheRENoteWhenDIsInformed() throws Exception {
+        assertEquals(Note.RE, Note.byItsLetter("D"));
+    }
+
+    @Test public void shouldReturnTheRESHARPNoteWhenDSHARPIsInformed() throws Exception {
+        assertEquals(Note.RE_SHARP, Note.byItsLetter("D#"));
+    }
 }
