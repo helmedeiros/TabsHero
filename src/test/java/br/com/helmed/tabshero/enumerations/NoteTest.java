@@ -59,6 +59,10 @@ public class NoteTest {
         assertEquals(Note.LA_SHARP, Note.byItsLetter("A#"));
     }
 
+    @Test public void shouldReturnTheSINoteWhenBIsInformed() throws Exception {
+        assertEquals(Note.SI, Note.byItsLetter("B"));
+    }
+
 
 
 }
