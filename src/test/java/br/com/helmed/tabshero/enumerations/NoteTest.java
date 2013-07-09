@@ -30,4 +30,8 @@ public class NoteTest {
     @Test public void shouldReturnTheRESHARPNoteWhenDSHARPIsInformed() throws Exception {
         assertEquals(Note.RE_SHARP, Note.byItsLetter("D#"));
     }
+
+    @Test public void shouldReturnTheMINoteWhenEIsInformed() throws Exception {
+        assertEquals(Note.MI, Note.byItsLetter("E"));
+    }
 }
