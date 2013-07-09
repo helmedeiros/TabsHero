@@ -34,4 +34,14 @@ public class NoteTest {
     @Test public void shouldReturnTheMINoteWhenEIsInformed() throws Exception {
         assertEquals(Note.MI, Note.byItsLetter("E"));
     }
+
+    @Test public void shouldReturnTheFANoteWhenFIsInformed() throws Exception {
+        assertEquals(Note.FA, Note.byItsLetter("F"));
+    }
+
+    @Test public void shouldReturnTheFASHARPNoteWhenFSHARPIsInformed() throws Exception {
+        assertEquals(Note.FA_SHARP, Note.byItsLetter("F#"));
+    }
+
+
 }

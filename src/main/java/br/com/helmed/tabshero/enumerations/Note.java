@@ -6,7 +6,7 @@ package br.com.helmed.tabshero.enumerations;
  * Time: 9:11 PM
  */
 public enum Note {
-    DO("C"), DO_SHARP("C#"), RE("D"), RE_SHARP("D#"), MI("E");
+    DO("C"), DO_SHARP("C#"), RE("D"), RE_SHARP("D#"), MI("E"), FA("F"), FA_SHARP("F#");
 
     private final String letter;
 
