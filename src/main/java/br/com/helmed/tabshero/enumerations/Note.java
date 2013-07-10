@@ -29,4 +29,5 @@ public enum Note {
         return null;
     }
 
+    public String getLetter() { return letter; }
 }
